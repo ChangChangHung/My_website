@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="張弘勳">
+        <meta name="keywords" content="自製網站範例,張弘勳,建中">
+        <title>阿勳的窩</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}"></script>
+    </head>
+    <body id="body">
+        <nav class="menu" id="header">
+            <ul>
+                <li class='bbor' id="ma"><a href="#selfr" >介紹</a></li>
+                <li class='bbor' id="mb"><a href="#novel" >書單</a></li>
+                <li class='bbor' id="mc" onclick="notnow()"><a href="#WorkOut" >健身</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h2  id='selfr'>介紹</h2>
+            <p>你好,我是張弘勳,來自建國中學,這個網站是我自學嘗試製作的個人網站,我用HTML,CSS,JavaScript製造了它。</p>
+            <img class="selfie" id="selfie" src="{{ url_for('static', filename='Selfie.png') }}" onclick="shy()">
+            <br><br><br>
+                <ul class="inline-list">
+                    <li class="ig"><a href="https://www.instagram.com/hunghsn_0311/" target="_blank"><span>&nbsp;follow</span></a></li>
+                    <li class="fb"><a href="https://www.facebook.com/profile.php?id=100023642321374" target="_blank"><span>follow</span></a></li>
+                </ul>
+            <ul>
+                <li>學校:<a href="https://www2.ck.tp.edu.tw/" target="_blank">台北市立建國高級中學</a></li>
+                <br>
+                <li>喜歡的東西:程式設計、小說、傳說對決、健身、<del>妹子</del></li>
+                <br>
+                <li>我會的程式語言:
+                <ol class="cll">
+                    <li>Python</li>
+                    <li>HTML</li> 
+                    <li>Javascript</li>
+                    <li>CSS</li>               
+                </ol>
+            </li>
+            </ul>
+            <hr>
+            <h2 id="novel">書單</h2>
+                <ul>
+                    <li><a href="https://m.qidian.com/book/1009817672.html">輪迴樂園</a>類別:無限流 作者:那一隻蚊子</li>
+                    <li><a href="https://book.qidian.com/info/1031777108/">光陰之外</a> 類別:仙俠 作者:耳根</li>
+                    <li><a href="https://m.qidian.com/book/1010868264.html">詭秘之主</a>類別:克蘇魯系列 作者:愛淺水的烏賊</li>
+                </ul>
+            </ul>
+            <!-- <h2 id="WorkOut">健身</h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+body{
+  padding: 0;
+  margin:0;
+  background: #F5F5DC;
+}
+/*nav*/
+.menu{
+  width: 150px;
+  height:50%;
+  position: fixed;
+  top:40%;
+  right:10%;
+}
+.menu ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+  height: 50%;
+}
+.menu ul li{
+  width:150px;
+  height: 27%;
+  border-width: 0;
+  border-left-width:3px;
+  border-style:solid;
+  border-color:black;
+}
+.menu a{ 
+  text-decoration: none;
+  width:150px;
+  height: 27%;
+  font-size: 200%;
+  color:black;
+}
+/*div*/
+.container{
+  width:48%;
+  position:relative;
+  left:24%;
+  font-family:cursive;
+}
+
+.container hr{
+  border-radius: 18px;
+  background-color: rgb(201, 35, 35);
+  height: 18px;
+}
+.container p{
+  font-size:200%;
+}
+.container h2{
+  font-size:400%;
+}
+.container ul{
+  font-size:200%;
+}
+.container ol{
+  font-size:200%;
+}
+/*ul*/
+.inline-list{
+  list-style-type: none;
+  width:100%;
+  height: 40px;
+  margin:0;
+  padding:0;
+}
+.inline-list li{
+  width: 165px;
+  height: 40px;
+	list-style: none;
+  border-radius: 10px 10px 10px 10px;
+  float: left;
+}
+.inline-list a{
+ text-decoration: none;
+ display: flex;
+ justify-content: center; 
+ align-items: center; 
+}
+.inline-list span{
+  color: white;
+  font-size: 35px;
+  font-family:Helvetica, sans-serif;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+ 
+}
+.inline-list a::before{
+  background-size:32px 32px;
+  width: 32px; 
+  height: 32px;
+  content:"";
+}
+/*li*/
+.ig{
+  background-color: rgb(233, 89, 80);
+  margin-right: 20px;
+}
+.ig a::before{
+  background-image: url('/iglogo.png');
+}
+.fb{
+  background-color: #4267B2;
+}
+.fb a::before{
+  background-image: url('/fb.jpg');
+}
+.cll li{
+  font-family:sans-serif,Helvetica,Arial;
+  font-size: 50%;
+}
+.js{
+  height: 100px;
+  width:100px;
+  background-color: rgb(159, 34, 236);
+}
+.selfie{
+  height: 50%;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  border-radius:18px;
+}
